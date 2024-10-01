@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>assignment five</title>
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <header class="fixed w-full z-20 bg-[#FFF]">
@@ -164,7 +180,99 @@
                 >
               </button>
 
+              <h1 id="donate-title3" class="my-2 text-2xl font-bold leading-8">
+                Donate for Flood at Noakhali, Bangladesh
+              </h1>
+              <p
+                id="donate-description"
+                class="mb-2 text-[rgba(17, 17, 17, 0.70)] text-[16px] font-light leading-7">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives
+              </p>
+              <input
+                id="input-amount3"
+                class="w-full my-2 p-5 rounded-lg"
+                type="text"
+                placeholder="Write Donation Amount" />
+              <button
+            
+                id="donations-btn3"
+                class="bg-[#B4F461] text-2xl font-semibold py-[10px] rounded-lg w-full text-black">
+                Donate Now
+              </button>
+            </div>
+          </div>
         </section>
-      </section>   
+      </section>
+      <footer class="">
+        <section
+          id="history"
+          style="display: none"
+          >
+         <section id="donate-hiden1" class="bg-[#FFF] w-3/4 mx-auto my-14 rounded-lg py-6 border hidden">
+          <div class="text-black my-5 px-4 lg:text-2xl font-semibold">
+            <div class="flex gap-3 flex-col lg:flex-row">
+              <h1 id="donate-balance-add"></h1>
+              <h1 id="donate-title-hidden" class="hidden">
+                Taka is Donated for
+              </h1>
+              <h1 id="donate-title-add"></h1>
+            </div>
+            <span class="pr-10 text-[16px]" id="time-zone"></span>
+          </div>
+         </section>
+
+
+          <section id="donate-hiden2" class="bg-[#FFF] w-3/4 mx-auto my-14 rounded-lg py-6 border hidden">
+            
+            <div class="text-black my-5 px-4 lg:text-2xl font-semibold">
+              <div class="flex gap-3 flex-col lg:flex-row">
+                <h1 id="donate-balance-add2"></h1>
+                <h1 id="donate-title-hidden2" class="hidden">
+                  Taka is Donated for
+                </h1>
+                <h1 id="donate-title-add2"></h1>
+              </div>
+              <span class="pr-10 text-[16px]" id="time-zone2"></span>
+            </div>
+            
+          </section>
+          <section id="donate-hiden3" class="bg-[#FFF] w-3/4 mx-auto my-14 rounded-lg py-6 border hidden">
+            <div class="text-black my-5 px-4 lg:text-2xl font-semibold">
+              <div class="flex gap-3 flex-col lg:flex-row">
+                <h1 id="donate-balance-add3"></h1>
+                <h1 id="donate-title-hidden3" class="hidden">
+                  Taka is Donated for
+                </h1>
+                <h1 id="donate-title-add3"></h1>
+              </div>
+              <span class="pr-10 text-[16px]" id="time-zone3"></span>
+            </div>
+          </section>
+        </section>
+      </footer>
+    </main>
+
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold text-black text-center">Congrates!</h3>
+        <div class="my-3">
+          <img class="mx-auto" src="./assets/coin.png" alt="#" />
+        </div>
+        <p class="py-4 text-center">You Have Donated for Humankind</p>
+        <h1 class="text-center">Successfully</h1>
+        <div class="modal-action">
+          <form method="dialog">
+            <button class="btn flex justify-center">close confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <script src="./app.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
